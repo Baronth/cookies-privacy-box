@@ -54,6 +54,6 @@ If Javascript is not enabled, the button "OK" is not displayed.
 NB
 --
 
-cookies-box.js contains a variable with the path of the file cookies-box-save.php
-cookies-box-config.php contains the db infos.
-cookies-box-config.php have to be in the same folder of cookies-box-save.php
+* cookies-box.js contains a variable with the path of the file cookies-box-save.php
+* cookies-box-config.php contains the db infos.
+* cookies-box-config.php have to be in the same folder of cookies-box-save.php
