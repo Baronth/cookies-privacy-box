@@ -16,6 +16,7 @@ cookies-box.js
 --------------
 
 Contains the function that create the cookies and do an AJAX request to cookies-box-save.php
+
 Used only Javascript ( not JQuery or similar ) for a larger compatibility.
 
 
@@ -29,6 +30,7 @@ cookies-box-save.php
 --------------------
 
 Save the informations of those people who clicked "OK" in a db table.
+
 Creates the table "cookies-box" if not already present.
 
 
@@ -51,8 +53,8 @@ If Javascript is not enabled, the button "OK" is not displayed.
 
 
 
-NB
---
+Notes
+-----
 
 * cookies-box.js contains a variable with the path of the file cookies-box-save.php
 * cookies-box-config.php contains the db infos.
