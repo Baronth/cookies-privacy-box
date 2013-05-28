@@ -7,45 +7,41 @@ Cookies Privacy Box
 - cookies-box-config.php
 
 cookies-box.css
-:
+
 	Contains the style of the box.
 
 cookies-box.js
-:
-	Contiene la funzione che crea i cookies e che li salva nel database.
-	Viene usato solamente Javascript ( non JQuery ) per poterlo usare anche dove non viene incluso JQuery.
+
+        Contains the function that create the cookies and do an AJAX request to cookies-box-save.php
+	Used only Javascript ( not JQuery or similar ) for a larger compatibility.
 
 cookies-box.php
-:
-	Contiene l'html del box. Mostra il box solamente se non è presente il cookie.
-	Da cambiare il testo e il link di "maggiori informazioni".
+
+	HTML code of the box, displayed only if the ser haven't already accepted.
+	
 
 cookies-box-save.php
-:
-	Salva le informazioni di chi ha cliccato su "OK" in una tabella nel database.
-	Salva nel database locale, quindi occorre impostare i campi con i dati del database.
-	Crea automaticamente la tabella "cookies-altea" se non è già presente.
+
+        Save the informations of those people who clicked "OK" in a db table.
+        Creates the table "cookies-box" if not already present.
 
 cookies-box-config.php
-:
-	Contiene le informazioni del database.
 
+	Config file with db infos.
 
-Funzionamento
-:
-	Il file cookies-box.php controlla la presenza del cookie "cookieAccepted".
-	Se è presente vuol dire che l'utente ha gi� cliccato su "OK" prima.
-	Se non è presente mostra il box con un breve testo e il pulsante "OK"
-	Cliccando su "OK", la funzione contenuta nel file cookies-altea.js crea il cookie, 
-		lo manda all'utente e salva nel database i dati dell'utente.
-	I dati vengono salvati attraverso il file cookies-altea-save.php, che deve essere
-		modificato inserendo i dati del database del dominio.
-	Vengono salvati questi dati: ip, user-agent, pagina in cui � stato cliccato "OK", timestamp.
+How
 
-	Se l'utente non ha attivato Javascript, viene mostrato il box ma non il pulsante "OK".
+        The file cookies-box.php controls if the user have the "cookieAccepted" cookie.
+        If it's present, it does mean that the user already clicked "OK".
+        If it's not present, a box with a short text and a "OK" button is displayed.
+        Clicking "OK" the function inside cookies-box.js creates the cookie, send it to the user and save in the database some user infos.
+        The infos are saved through cookies-box-save.php.
+        Infos saved: ip, user-agent, referer page, timestamp.
+        
+        If Javascript is not enabled, the button "OK" is not displayed.
+
 NB
-:
-	Il file cookies-altea.js contiene una variabile con il percorso del file cookies-altea-save.php, da
-		cambiare per ogni dominio.
-	Il file cookies-altea-config.php contiene i dati del database, da cambiare per ogni dominio.
-	Il file cookies-altea-config.php deve essere nella stessa cartella di cookies-altea-save.php.
+
+        cookies-box.js contains a variable with the path of the file cookies-box-save.php
+        cookies-box-config.php contains the db infos.
+        cookies-box-config.php have to be in the same folder of cookies-box-save.php

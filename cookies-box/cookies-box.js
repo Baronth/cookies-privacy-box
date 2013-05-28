@@ -19,10 +19,10 @@ function createCookie() {
     cookiesDiv.style.filter = 'alpha(opacity=0)';
 
     /**
-     * Save the user infos through "cookies-altea-save.php"
+     * Save the user infos through "cookies-box-save.php"
      */
 
-    var url = "/wp-content/themes/leaf/includes/cookies-altea-save.php";
+    var url = "/wp-content/themes/leaf/includes/cookies-box-save.php";
     var data = "";
     var method = 'POST';
     var async = true;
