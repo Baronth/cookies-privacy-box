@@ -10,13 +10,13 @@ Cookies Privacy Box
 cookies-box.css
 ---------------
 
-	Contains the style of the box.
+Contains the style of the box.
 
 cookies-box.js
 --------------
 
-        Contains the function that create the cookies and do an AJAX request to cookies-box-save.php
-	Used only Javascript ( not JQuery or similar ) for a larger compatibility.
+Contains the function that create the cookies and do an AJAX request to cookies-box-save.php
+Used only Javascript ( not JQuery or similar ) for a larger compatibility.
 
 
 cookies-box.php
@@ -47,9 +47,9 @@ How
 * The infos are saved through cookies-box-save.php.
 * Infos saved: ip, user-agent, referer page, timestamp.
         
-> If Javascript is not enabled, the button "OK" is not displayed.
+If Javascript is not enabled, the button "OK" is not displayed.
 
-* * *
+
 
 NB
 --
