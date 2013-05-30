@@ -22,6 +22,7 @@ function createCookie() {
      * Save the user infos through "cookies-box-save.php"
      */
 
+    // The path of the file cookies-box-save.php
     var url = "/wp-content/themes/leaf/includes/cookies-box-save.php";
     var data = "";
     var method = 'POST';
@@ -39,7 +40,7 @@ function createCookie() {
         xmlHttpRequst = new ActiveXObject("Microsoft.XMLHTTP");
     }
 
-    // Se AJAX is supported
+    // If AJAX is supported
     if (xmlHttpRequst != false)
     {
         // Open the HTTP request
