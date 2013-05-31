@@ -4,6 +4,7 @@
  * Basic settings
  */
 
+// Enable or disable the "save to db" functionality
 $enableSave = false;
 
 
