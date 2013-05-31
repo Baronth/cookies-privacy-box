@@ -5,9 +5,7 @@
  */
 include_once 'cookies-box-config.php';
 
-if (!$enableSave) {
-    //Do nothing
-} else {
+if ($enableSave) {
     /**
      * Database connection
      */
@@ -35,4 +33,5 @@ if (!$enableSave) {
     $stmtInsert = $dbh->prepare('INSERT INTO `cookies-box` (ip,`user-agent`,`page`) VALUES(?,?,?)');
     $stmtInsert->execute(array($ip, $userAgent, $page));
 }
+
 ?>
