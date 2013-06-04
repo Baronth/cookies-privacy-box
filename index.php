@@ -4,7 +4,8 @@
         <script src="cookies-box/cookies-box.js"></script>
     </head>
     <body>
-        Mah page
+        <h1>Mah page</h1>
+        <p>Example page</p>
         <?php
         include('cookies-box/cookies-box.php');
         ?>

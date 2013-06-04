@@ -1,3 +1,12 @@
+/*
+ * 
+ * Javascript functions
+ * 
+ * Used only javascript for more compatibility with sites that doesn't use JQuery or any other library.
+ * 
+ */
+
+
 window.onload = function() {
     var cookieButton = document.getElementById('cookiesScriptEnabled');
     if (cookieButton) {

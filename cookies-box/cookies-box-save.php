@@ -2,6 +2,9 @@
 
 /**
  * Saves some user infos of the ones that press OK
+ * 
+ * It saves: ip, user agent, page and timestamp
+ * 
  */
 include_once 'cookies-box-config.php';
 
